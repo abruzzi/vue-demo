@@ -1,3 +1,7 @@
 .is-loading {
   color: orange;
 }
+
+#root {
+  padding-top: 40px;
+}

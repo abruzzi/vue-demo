@@ -14,7 +14,6 @@ Vue.component('todo-list', {
   }
 })
 
-
 var app = new Vue({
   el: '#root'
 })
