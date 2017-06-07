@@ -12,7 +12,14 @@
 
       <div id="root" class="container">
         <!-- <todo-list></todo-list> -->
-        <card title="Juntao Qiu is going to learn vue" subtitle="How does that sounds?"></card>
+        <!-- <card title="Juntao Qiu is going to learn vue" subtitle="How does that sounds?"></card> -->
+        <model v-if="showModel" @close="showModel=false">
+          <p>
+            Juntao Qiu is going to learn vue
+          </p>
+        </model>
+
+        <button @click="showModel=true">Click me to show a model</button>
       </div>
 
 
@@ -29,6 +36,6 @@
 		</div> -->
 
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/card.js"></script>
+    <script src="js/model.js"></script>
     </body>
 </html>
