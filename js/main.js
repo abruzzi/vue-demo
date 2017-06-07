@@ -2,7 +2,8 @@ var app = new Vue({
   el: '#app',
   data: {
     newName: '',
-    names: ['John', 'Smith', 'Frank']
+    names: ['John', 'Smith', 'Frank'],
+    hint: 'Click to add new name to the list below'
   },
   methods: {
     addName: function() {
