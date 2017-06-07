@@ -10,17 +10,11 @@
     <body>
 
       <div id="root">
-        <h2>Todo Items</h2>
-        <ul>
-          <li v-for="todo in todos" v-text="todo.desc"></li>
-        </ul>
-
-        <h2>Imcompleted Items</h2>
-        <ul>
-          <li v-for="todo in incompletedTodos" v-text="todo.desc"></li>
-        </ul>
+        <todo-list></todo-list>
       </div>
-<!--
+
+
+    <!--
 		<div id="app">
       <div>
         <input type="text" v-model="newName">
@@ -32,6 +26,6 @@
 		</div> -->
 
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/todos.js"></script>
+    <script src="js/todo-component.js"></script>
     </body>
 </html>
