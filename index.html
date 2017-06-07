@@ -9,9 +9,11 @@
     </head>
     <body>
 		<div id="app">
-		  {{ message }}
+      <ul>
+        <li v-for="name in names">{{name}}</li>
+      </ul>
 		</div>
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/main.js"></script>
     </body>
 </html>
