@@ -8,16 +8,30 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
+
+      <div id="root">
+        <h2>Todo Items</h2>
+        <ul>
+          <li v-for="todo in todos" v-text="todo.desc"></li>
+        </ul>
+
+        <h2>Imcompleted Items</h2>
+        <ul>
+          <li v-for="todo in incompletedTodos" v-text="todo.desc"></li>
+        </ul>
+      </div>
+<!--
 		<div id="app">
       <div>
         <input type="text" v-model="newName">
-        <button @click="addName" v-bind:title="hint">Add Name</button>
+        <button @click="addName" v-bind:title="hint" v-bind:class="{'is-loading': isLoading}">Add Name</button>
       </div>
       <ul>
         <li v-for="name in names">{{name}}</li>
       </ul>
-		</div>
+		</div> -->
+
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/todos.js"></script>
     </body>
 </html>
