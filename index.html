@@ -13,13 +13,27 @@
       <div id="root" class="container">
         <!-- <todo-list></todo-list> -->
         <!-- <card title="Juntao Qiu is going to learn vue" subtitle="How does that sounds?"></card> -->
-        <model v-if="showModel" @close="showModel=false">
+        <!-- <model v-if="showModel" @close="showModel=false">
           <p>
             Juntao Qiu is going to learn vue
           </p>
         </model>
 
-        <button @click="showModel=true">Click me to show a model</button>
+        <button @click="showModel=true">Click me to show a model</button> -->
+
+        <tabs>
+          <tab name="Map View" selected="true">
+            <p>A</p>
+          </tab>
+
+          <tab name="Graph View">
+            <p>B</p>
+          </tab>
+
+          <tab name="Matrix View">
+            <p>C</p>
+          </tab>
+        </tabs>
       </div>
 
 
@@ -36,6 +50,6 @@
 		</div> -->
 
 		<script src="https://unpkg.com/vue/dist/vue.js"></script>
-    <script src="js/model.js"></script>
+    <script src="js/tabs.js"></script>
     </body>
 </html>
